@@ -1,0 +1,46 @@
+<aside>
+    <div class="compensation-calculator">
+      <h4>
+        Compensation<br />
+        Calculator
+      </h4>
+      <form action="">
+        <label for="aincome">Average income</label>
+       <span class="income"> 
+         <input type="number" name="income" min="0" [(ngModel)]="employercompensation">
+      </span>
+        <label for="sickleavedays">Days on sick-leave:</label>
+        <span class="sickleavedays"> <input type="number" name="" id="" min="0" /></span>
+        
+        <input type="checkbox" name="" id="" />
+        <label class="checkbox" for="tubercolosis"
+          >I have tubercolosis</label
+        >
+
+        <button class="calculate">Calculate</button>
+
+        <hr />
+
+        <div class="compensations">
+          <div class="employer-compensates">
+            <span>
+              <p>The employer compensates<br><strong> 4 days</strong></p><br>
+                 <p><strong>{{ employercompensation }}</strong></p>
+              <p><span class="daily-allowance">Daily allowance<br> 28,00 €</span></p>
+            </span>
+          </div>
+
+          <div class="health-insurance-compensates">
+            <p>Health Insurance compensates <strong><br> 0 days</strong></p><br>
+            <p><strong>0,00€</strong></p>
+            <p><span class="daily-allowance">Daily allowance <br>28,00 €</span></p>
+          </div>
+        </div>
+        <hr />
+        <span class="compensation-total">
+        <p>Compensation total for 7 days (net)</p><br>
+        <strong class="net"><p>112,00</p></strong>
+     </span>
+      </form>
+    </div>
+  </aside>

@@ -1,0 +1,371 @@
+
+
+body {
+    background: linear-gradient(90deg, #2b303a 0%, #3f4756 100%);
+    font-family: "Sora", sans-serif;
+    
+  }
+
+  main {
+    height:100%;
+  }
+  
+  .wrapper {
+    max-width: 1280px;
+    margin: auto;
+    padding: 100px 100px;
+    display: flex;
+  }
+
+  h1 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height, or 125% */
+  
+    letter-spacing: -0.02em;
+  
+    /* White */
+  
+    color: #ffffff;
+  }
+  
+  h2 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    /* or 109% */
+    color: white;
+  
+    letter-spacing: -0.02em;
+  }
+  
+  section {
+    max-width: 660px;
+  }
+  
+  h4 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    /* or 104% */
+  
+    letter-spacing: -0.02em;
+  
+    /* Metal Dark */
+  
+    color: #111317;
+  }
+  
+  label {
+    display: block;
+    margin: 20px 0 5px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+  
+    /* Metal Dark */
+  
+    color: #111317;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    padding: 10px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #111317;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border: double 2px transparent;
+    border-radius: 4px;
+    background-image: linear-gradient(white, white),
+      radial-gradient(circle at top left, #d3dae8, #a7b7d8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding-right: 60px;
+  }
+  
+  ul {
+    list-style-image: url("../assets/img/Bullet.png");
+    list-style-position: inside;
+  }
+  
+  li {
+    margin-top: 10px;
+  }
+  
+  input[type="checkbox"] {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20px;
+    height: 20px;
+  
+    border: double 2px transparent;
+    border-radius: 4px;
+    background-image: linear-gradient(white, white),
+      radial-gradient(circle at top left, #d3dae8, #a7b7d8);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+  
+  
+  .checkbox {
+    display: inline-block;
+  }
+  
+  input[type="checkbox"]:checked {
+      border: none;
+      background: #111317;
+  color:red;
+      outline: 2px solid deeppink;
+  }
+  
+  
+  section p {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    fo7nt-size: 18px;
+    line-height: 30px;
+    margin: 20px 0;
+    color: #ffffff;
+  }
+  
+  section li {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+  }
+  
+  .red-highlight {
+    color: #e1261c;
+  }
+  
+
+  
+  .compensation-calculator {
+    width: 320px;
+    height: 755px;
+    background: #ffffff;
+    margin-left: 100px;
+    padding: 80px 20px;
+  
+    /* Cut Corners */
+  
+    clip-path: polygon(
+      0% 20px,
+      /* top left */ 20px 0%,
+      /* top left */ calc(100% - 20px) 0%,
+      /* top right */ 100% 20px,
+      /* top right */ 100% calc(100% - 20px),
+      /* bottom right */ calc(100% - 20px) 100%,
+      /* bottom right */ 20px 100%,
+      /* bottom left */ 0 calc(100% - 20px) /* bottom left */
+    );
+  }
+  
+  button {
+    border: none;
+    background: linear-gradient(90deg, #911812 0%, #e1261c 100%);
+    border-radius: 30px;
+    text-align: center;
+  
+    width: 169px;
+    height: 60px;
+  
+    margin: 20px 0;
+  
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+  
+    /* White */
+  
+    color: #ffffff;
+  
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #911812 0%, #e1261c 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15),
+      inset 0px -4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  button:active {
+    background: linear-gradient(90deg, #911812 0%, #e1261c 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25),
+      inset 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  }
+  
+  hr {
+    background-color: #e9edf4;
+    border: 0;
+    margin: 0 -20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #c9c7c7;
+  }
+  
+  .compensations {
+    display: flex;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  img {
+    width: 240px;
+    height: 180px;
+    margin-left: 40px;
+    border-radius: 4px;
+  }
+  
+  .compensation-total {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .second {
+    margin-left: 35px;
+    list-style-image: url("../assets/img//Bullet-2.png");
+    list-style-position: inside;
+  }
+  
+  .daily-allowance {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* or 125% */
+  
+    text-align: center;
+  
+    /* Metal Middle */
+  
+    color: #7a818e;
+  }
+  
+  .compensations p {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    /* or 107% */
+  
+    text-align: center;
+  
+    /* Metal Dark */
+  
+    color: #111317;
+  }
+  
+  @media (max-width: 1180px) {
+    .wrapper {
+      flex-direction: column;
+      padding: 0 50px;
+    }
+  
+    .compensation-calculator {
+      margin: 40px auto;
+    }
+  
+  }
+  
+  .income::after {
+    content: "€";
+    position: absolute;
+    display: inline;
+    margin-top: 10px;
+    margin-left: -25px;
+    color: red;
+    font-weight: bold;
+  
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+  
+    text-align: right;
+  
+    /* Metal Dark */
+  
+    color: #111317;
+  }
+  
+  .sickleavedays::after {
+    content: "days";
+    position: absolute;
+    display: inline;
+    margin-top: 10px;
+    margin-left: -53px;
+    color: red;
+    font-weight: bold;
+  
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 167% */
+  
+    text-align: right;
+  
+    /* Metal Dark */
+  
+    color: #111317;
+  }
+  
+  
+  
+  
+  
+  
+  
+  html {
+    -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+  }
+  
+  
+  
+  
+  
