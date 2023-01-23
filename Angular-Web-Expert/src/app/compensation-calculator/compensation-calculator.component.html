@@ -4,42 +4,49 @@
         Compensation<br />
         Calculator
       </h4>
-      <form action="">
-        <label for="aincome">Average income</label>
+
+      <form action="" >
+        <label for="income">Average income</label>
        <span class="income"> 
-         <input type="number" name="income" min="0" [(ngModel)]="employercompensation">
+
+         <input type="number" name="income" min="0" [(ngModel)]="income">
+
       </span>
         <label for="sickleavedays">Days on sick-leave:</label>
-        <span class="sickleavedays"> <input type="number" name="" id="" min="0" /></span>
+        <span class="sickleavedays"> 
+          
+          
+          <input type="number" name="daysOnSickLeave" max="240" id="" min="0" [(ngModel)]="daysOnSickLeave"></span>
         
-        <input type="checkbox" name="" id="" />
-        <label class="checkbox" for="tubercolosis"
-          >I have tubercolosis</label
-        >
+        <input type="checkbox" name="hasTubercolosis" id="hasTubercolosis" [(ngModel)]="hasTubercolosis"/>
 
-        <button class="calculate">Calculate</button>
+
+        <label class="checkbox" for="hasTubercolosis"
+          >I have tubercolosis</label>
+
+        <button class="calculate" (click)="onCalculateCompensation()">Calculate</button >
 
         <hr />
 
         <div class="compensations">
           <div class="employer-compensates">
             <span>
-              <p>The employer compensates<br><strong> 4 days</strong></p><br>
-                 <p><strong>{{ employercompensation }}</strong></p>
+              <p>The employer compensates<br><strong>{{ employerCompensatesDays }} days</strong></p><br>
+                 <p><strong>{{ employerCompensatesAmount }}</strong></p>
               <p><span class="daily-allowance">Daily allowance<br> 28,00 €</span></p>
             </span>
           </div>
 
           <div class="health-insurance-compensates">
-            <p>Health Insurance compensates <strong><br> 0 days</strong></p><br>
-            <p><strong>0,00€</strong></p>
+            <p>Health Insurance compensates <strong><br>{{ healthInsuranceCompensatesDays }} days</strong></p><br>
+            <p><strong>{{ healthInsuranceCompensatesAmount }}</strong></p>
             <p><span class="daily-allowance">Daily allowance <br>28,00 €</span></p>
           </div>
         </div>
         <hr />
         <span class="compensation-total">
         <p>Compensation total for 7 days (net)</p><br>
-        <strong class="net"><p>112,00</p></strong>
+        <strong class="net"><p>{{compensationTotal}}</p></strong>
      </span>
       </form>
     </div>
